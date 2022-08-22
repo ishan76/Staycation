@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.vFirstDiv {
+    border-bottom: 1px solid rgb(240, 233, 233);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.brandSpan {
+    color: #3252DF;
+}
+
+
+.tabs {
+    width: 50%;
+}
+
+.list {
+    margin-top: 10px;
+    margin-right: 0;
+    list-style: none;
+    display: flex;
+    float: right;
+
+}
+
+.list a {
+    display: inline-block;
+    margin-right: 40px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.list a:hover {
+    color: #3252DF;
+}
+
+.brand a {
+    cursor: pointer;
+    color: #152C5B;
+    text-decoration: none;
+}
+
+.mainSection {
+    padding-top: 30px;
+}
+
+.secondSection {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: flex;
+
+}
+
+.divLeft {
+    width: 40%;
+}
+
+.bodyHead {
+    color: rgb(21, 30, 104);
+    font-size: 40px;
+    line-height: 1.1;
+}
+
+.bodyHead2 {
+    color: rgb(21, 30, 104);
+    font-size: 40px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.bodyPara {
+    padding-right: 30px;
+}
+
+.leftDivP {
+    color: #B0B0B0;
+    font-size: 17px;
+    line-height: 1.5;
+    padding-right: 20px;
+}
+
+.showMeNow {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #3252DF;
+    color: white;
+    padding: 12px 40px;
+    border-radius: 4px;
+    box-shadow: 1px 2px 8px #3252DF;
+
+}
+
+.btn {
+    padding-bottom: 40px;
+}
+
+.iconsAndText {
+    display: flex;
+    padding-top: 42px;
+    justify-content: space-between;
+}
+
+.icons span {
+    color: #B0B0B0;
+    Font-size: 16px;
+    Line-height: 27px;
+    font-weight: 300;
+}
+
+.icons p {
+    margin-top: 10px;
+    color: #152C5B;
+    Font-size: 16px;
+    Line-height: 27px;
+    font-weight: 500;
+}
+
+.divRight {
+    position: relative;
+    width: 60%;
+}
+
+.innerDivRight {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    right: 0;
+    border: 2px solid rgb(219, 216, 216);
+    border-radius: 30% 15px 15px 15px;
+    bottom: 0;
+}
+
+
+.divRight img {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    z-index: 1;
+    right: 40px;
+    border-radius: 25% 15px 15px 15px;
+}
+
+.mostPicked {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #152C5B;
+}
+
+.cards {
+    display: grid;
+    grid-template-areas:
+        "a b c"
+        "a d e";
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.firstCard {
+    position: relative;
+    grid-area: a;
+    width: 361px;
+    height: 460px;
+    border-radius: 15px;
+}
+
+.firstCard::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(357deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 50%);
+}
+
+.firstCard img {
+    width: 361px;
+    height: 460px;
+    border-radius: 15px;
+}
+
+
+.firstCard .perNight span {
+    font-weight: 500;
+}
+
+.firstCard .perNight {
+    position: absolute;
+    width: 180px;
+    height: 38px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 27px;
+    padding-top: 6px;
+    top: 0;
+    right: 0;
+    background-color: #FF498B;
+    color: white;
+}
+
+.divInCard {
+    position: absolute;
+    color: #FFFFFF;
+    margin-left: 24px;
+    bottom: 24px;
+}
+
+.divInCard .p1 {
+    font-weight: 400;
+    font-size: 20px;
+    Line-height: 30px;
+}
+
+.divInCard .p2 {
+    font-weight: 300;
+    font-size: 15px;
+    Line-height: 22px;
+}
+
+.secondCard {
+    grid-area: b;
+    background-image: url("img/bandung.png");
+    background-size: cover;
+    border-radius: 15px;
+    height: 215px;
+    width: 361px;
+    position: relative;
+}
+
+.thirdCard {
+    grid-area: c;
+    background-image: url("img/malang.png");
+    background-size: cover;
+    border-radius: 15px;
+    height: 215px;
+    width: 361px;
+    position: relative;
+}
+
+.fourthCard {
+    grid-area: d;
+    background-image: url("img/malang2.png");
+    background-size: cover;
+    border-radius: 15px;
+    height: 215px;
+    width: 361px;
+    position: relative;
+}
+
+.fifthCard {
+    grid-area: e;
+    background-image: url("img/medan.png");
+    background-size: cover;
+    border-radius: 15px;
+    height: 215px;
+    width: 361px;
+    position: relative;
+}
+
+.thirdSection {
+    padding-top: 35px;
+}
+
+.perNight span {
+    font-weight: 500;
+}
+
+.perNight {
+    position: absolute;
+    width: 180px;
+    height: 38px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 27px;
+    padding-top: 6px;
+    top: 0;
+    right: 0;
+    background-color: #FF498B;
+    color: white;
+}
+
+.divCard {
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 25px;
+    left: 24px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.divCard .p1 {
+    font-weight: 400;
+    font-size: 20px;
+    Line-height: 30px;
+}
+
+.divCard .p2 {
+    font-weight: 300;
+    font-size: 15px;
+    Line-height: 22px;
+}
+
+.backyardDiv {
+    margin-top: 70px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #152C5B;
+}
+
+.backyard {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.outerDiv a {
+    text-decoration: none;
+}
+
+.town {
+    position: relative;
+    width: 263px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.town img {
+    width: 263px;
+    height: 180px;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.town span {
+    font-weight: 500;
+}
+
+.town .popular {
+    position: absolute;
+    width: 180px;
+    height: 38px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 27px;
+    padding-top: 6px;
+    top: 0;
+    right: 0;
+    background-color: #FF498B;
+    color: white;
+}
+
+.outerDiv .p1
+{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 16px;
+    color: #152C5B;
+}
+
+.outerDiv .p2 {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: #B0B0B0;
+}
+
+.livingRoom {
+    margin-top: 70px;
+    font-weight: 500;
+    line-height: 36px;
+    font-size: 24px;
+    color: #152C5B;
+}
+
+.roomDiv {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.park {
+    position: relative;
+    width: 263px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.park img {
+    width: 263px;
+    height: 180px;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.park span {
+    font-weight: 500;
+}
+
+.park .large {
+    position: absolute;
+    width: 180px;
+    height: 38px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 27px;
+    padding-top: 6px;
+    top: 0;
+    right: 0;
+    background-color: #FF498B;
+    color: white;
+}
+
+.livingDiv a {
+    text-decoration: none;
+}
+
+.livingDiv .p1 {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #152C5B;
+}
+
+.livingDiv .p2 {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: #B0B0B0;
+}
+
+.kitchenApt {
+    margin-top: 70px;
+    font-weight: 500;
+    line-height: 36px;
+    font-size: 24px;
+    color: #152C5B;
+}
+
+.kitchenDiv {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.kitchenImg {
+    position: relative;
+    width: 263px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.kitchenImg img {
+    width: 263px;
+    height: 180px;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.kitchenImg span {
+    font-weight: 500;
+}
+
+.kitchenImg p {
+    position: absolute;
+    width: 180px;
+    height: 38px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 27px;
+    padding-top: 6px;
+    top: 0;
+    right: 0;
+    background-color: #FF498B;
+    color: white;
+}
+
+.setDiv a {
+    text-decoration: none;
+}
+
+.setDiv .p1 {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #152C5B;
+}
+
+.setDiv .p2 {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: #B0B0B0;
+}
+
+.fourthSection {
+    display: flex;
+}
+
+.parent {
+    position: relative;
+    margin-top: 59px;
+    margin-bottom: 100px;
+    width: 457px;
+    height: 581px;
+}
+
+.child {
+    position: absolute;
+    height: 486px;
+    width: 356px;
+    border: 2px solid #E5E5E5;
+    border-radius: 15px 15px 30% 15px;
+    z-index: -1;
+    top: 45px;
+    left: 8px;
+}
+
+.parent img {
+    position: absolute;
+    height: 486px;
+    width: 356px;
+    left: 40px;
+    top: 80px;
+    object-fit: cover;
+    border-radius: 15px 15px 100px 15px;
+}
+
+.parentTwo .family {
+    margin-left: 25px;
+    margin-top: 195px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #152C5B;
+}
+
+.parentTwo .one {
+    margin-left: 22px;
+}
+
+.parentTwo i {
+    margin-left: 1.5px;
+    margin-top: 40px;
+}
+
+.parentTwo .desc {
+    margin-top: 8px;
+    margin-left: 25px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #152C5B;
+}
+
+.parentTwo .product {
+    margin-top: 8px;
+    margin-left: 25px;
+    color: #B0B0B0;
+}
+
+.parentTwo a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #3252DF;
+    color: white;
+    padding: 10px 28px;
+    border-radius: 4px;
+    box-shadow: 1px 2px 8px #3252DF;
+    margin-top: 50px;
+    margin-left: 25px;
+
+}
+
+.footerDiv {
+    border-top: 1px solid #E5E5E5;
+}
+
+.containerr {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.footer {
+    margin-top: 25px;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a .anchor{
+    display: block;
+    color: #152C5B;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 39px;
+}
+
+.footer span {
+    color: #3252DF;
+}
+
+.footer .footerHead {
+    margin-bottom: 23px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: rgb(21, 30, 104);
+}
+
+footer p {
+    line-height: 24px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #B0B0B0;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
